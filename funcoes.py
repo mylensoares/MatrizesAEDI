@@ -26,15 +26,21 @@ def soma_DiagonalPrincipal(matriz):
 
 # Exibindo apenas os números pares da matriz
 def pares_matriz(matriz):
-    cont = 0
-    paresMatriz = []
-    while cont < len(matriz):
-        cont += 1
-        if matriz[cont] % 2 == 0:
-            paresMatriz.append(matriz[cont])
+    pares = []
+    for i in range(len(matriz)):
+        for j in range((len(matriz[0]))):
+            if matriz[i][j] % 2 == 0:
+                pares.append(matriz[i][j])
+    print("="*30, "PARES" ,"="*30)
+    return print(f"Os Números Pares presentes na matriz são: {pares}")
 
+# Exibindo apenas os números ímpares da matriz
+def impares_matriz(matriz):
+    impares = []
+    for i in range(len(matriz)):
+        for j in range((len(matriz[0]))):
+            if matriz[i][j] % 2 != 0:
+                impares.append(matriz[i][j])
+    print("="*30, "ÍMPARES" ,"="*30)
+    return print(f"Os Números Ímpares presentes na matriz são: {impares}")
 
-matriz = [[9, 7, 4, 2], [10, 13, 18, 21], [33, 5, 7, 90], [23, 31, 51, 60]]
-
-soma_DiagonalPrincipal(matriz)
-pares_matriz(matriz)
