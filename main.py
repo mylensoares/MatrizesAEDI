@@ -1,7 +1,8 @@
 import menu
 import funcoes
 
-matriz = [[9, 7, 4, 2], [10, 13, 18, 21], [33, 5, 7, 90], [23, 31, 51, 60]]
+matriz = funcoes.ler_matriz()
+print("Matriz definida com sucesso!")
 
 while True:
     print("="*60)
