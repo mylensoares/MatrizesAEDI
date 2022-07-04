@@ -1,4 +1,7 @@
 # trabalhoN1_AEDI
+
+Este é um trabalho acadêmico da disciplina Estruturas de Dados I.
+
 O sistema está dividido em três partes fundamentais, sendo elas:
 
 funcoes.py: 
